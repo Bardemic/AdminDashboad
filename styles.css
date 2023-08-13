@@ -39,7 +39,6 @@ main {
     display: grid;
     grid-template-columns: 3fr 1fr;
     padding: 15px;
-    padding-bottom: 60px;
     gap: 40px;
 }
 
@@ -82,6 +81,28 @@ main > section:last-child {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
+    background-color: #f5f5f5;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 1em;
+}
+
+#announcements > article + article {
+    border-top: 1px solid gray;
+    padding-top: 10px;
+}
+
+#announcements > article > p {
+    font-size: 12px;
+}
+
+#announcements > article {
+    padding: 10px;
+}
+
+h3 {
+    font-size: 16px;
+    padding-bottom: 2px;
 }
 
 #trending > div {
