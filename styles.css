@@ -72,12 +72,14 @@ aside > div > img {
 
 header > div:first-child { 
     display: grid;
-    grid-template-columns: 1fr 7fr 4fr 2fr 4fr;
+    grid-template-columns: 1fr 9fr 4fr 1fr 5fr;
+    padding-top: 10px;
+    align-items: center;
 }
 
 header > div:last-child {
     display: grid;
-    grid-template-columns: 1fr 5fr 2fr;
+    grid-template-columns: 1fr 5fr 4fr;
 }
 
 main > section:first-child > div:last-child {
@@ -180,4 +182,62 @@ h4 {
 
 #projects > article > p {
     padding-bottom: 15px;
+}
+
+header > div > div > button {
+    border: none;
+    border-radius: 2em;
+    padding: 10px 25px;
+    width: 90px;
+    background-color: #21aaef;
+    color: #f5f5f5;
+}
+
+header > div:last-child > div:last-child {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+
+header > div:last-child > div > img {
+    height: 72px;
+}
+
+header > div:first-child > input[type="search"]{
+    border-radius: 2em;
+    border: none;
+    height: 30px;
+    background-color: #c1ccd7;
+}
+
+#topText {
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+}
+
+#topText > div:first-child {
+    align-self: end;
+    font-size: 14px;
+}
+
+#topText > div:last-child {
+    font-size: 25px;
+    font-weight: 800;
+}
+
+header > div > input + img, header > div:first-child > img:first-child {
+    justify-self: end;
+    padding-right: 2%;
+    height: 25px;
+}
+
+header > div > img + img {
+    height: 45px;
+    padding-left: 8%;
+}
+
+header > div:first-child > div:last-child {
+    font-weight: 800;
+    font-size: 20px;
+    padding-left: 2%;
 }
